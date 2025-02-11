@@ -93,7 +93,8 @@ NODE inspos(NODE head){
         if(temp!=NULL){
         new->next=temp;
         prev->next=new;
-        return head;}
+        return head;
+    }
     }
     printf("invalid position\n");
     return head;

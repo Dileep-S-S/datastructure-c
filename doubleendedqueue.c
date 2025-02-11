@@ -4,12 +4,12 @@
 int size;
 
 struct Queue {
-    int *queue;  // Array to store Queue
-    int front;   // Front index
-    int rear;    // Rear index
+    int *queue;  
+    int front; 
+    int rear;    
 } Q;
 void pushrear(int val){
-    if(Q.rear==size-1){
+    if(Q.rear==size - 1){
         printf("reallocating Memory\n");
         size *= 2;
         Q.queue=(int *)realloc(Q.queue,size*(sizeof(int)));
